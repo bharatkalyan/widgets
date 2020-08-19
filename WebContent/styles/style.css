@@ -1,0 +1,23 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+  color: black;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+tr{
+border-bottom: 1px solid black;
+
+}
+#btnAdd{
+	padding-top: 20px !important;
+}
+.detailsForm{
+	border: 1px solid black !important;
+    width: max-content !important;
+}

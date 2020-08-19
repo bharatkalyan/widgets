@@ -1,0 +1,21 @@
+<div class="col-md-6">
+<h3>Add Widget</h3>
+</div>
+ <div data-ng-controller="widgetController">
+ <form data-ng-submit="addWidgets()">
+			<div class="col-md-offset-2 col-md-6 form-group">  
+			<label>Name</label>
+            <input type="text" id="name" data-ng-model="newwidgets.name" class="form-control" /> 
+            </div>
+            <div class="col-md-offset-2 col-md-6 form-group">  
+            <label for="lastName">Number</label><br />
+                <input type="number" id="number" data-ng-model="newwidgets.number" class="form-control" />
+                </div>
+         <div class="col-md-offset-2 col-md-6">
+        <input type="submit" value="Submit"  />
+        <input type="reset" data-ng-click="resetForm()" value="Reset" />
+        </div>
+    </form>
+ </div>
+ 
+ 

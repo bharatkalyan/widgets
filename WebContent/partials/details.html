@@ -1,0 +1,45 @@
+<h3>Widget Details</h3>
+<div class="detailsForm">
+<form name="editWidget" style="width: 600px; margin: 0px auto;" id="editWidget">  
+
+       <div class="form-group">  
+           <label for="cname" class="col-sm-2 control-label">Name:</label>  
+           <div class="col-sm-2 space"> 
+               <input type="text" class="form-control" id="name" placeholder="please enter your name" data-ng-model="widgetsdetails.name" 
+               data-ng-value= "widgetsdetails.name"   data-ng-readonly="true"
+               required /> 
+                
+           </div>  
+       </div>  
+       <div class="form-group">  
+           <label for="address" class="col-sm-2 control-label">Number:</label>  
+           <div class="col-sm-2 space">                              
+               <input type="text" class="form-control" id="number" placeholder="please enter your address" data-ng-model="widgetsdetails.number"
+               data-ng-readonly="true"
+                required/>  
+           </div>  
+       </div>
+         <div class="form-group">  
+           <label for="address" class="col-sm-12 control-label">key/value pairs:</label>  
+          <div data-ng-repeat="(key, value) in widgetPairs">
+          <div class="col-sm-6" >
+          	<input type="text" class="form-control" id="pairsKey" data-ng-model="key"/>
+          </div>
+             <div class="col-sm-6" >
+          	<input type="text" class="form-control" id="pairsValue" data-ng-model="value"/>
+          </div>
+          	<button data-ng-click="addElement()">+</button>
+          	<button data-ng-click="removeElement()">-</button>
+          </div>
+       </div>   
+       <br />  
+       <div class="form-group space">
+           <div class="col-sm-offset-2 col-sm-10">
+               <a data-ng-href="#/edit/{{widgetsdetails.id}}">  
+               <input type="button" value="Edit" class="btn btn-primary" />
+               </a>  
+           </div>  
+       </div>  
+	<br />  
+</form>  
+</div>
