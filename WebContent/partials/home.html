@@ -1,20 +1,20 @@
 <h3>Widgets summary</h3>
-<div class="container" >
+<div class="container">
 	<div class="col-md-6">
-	<table> 
-	  <tr data-ng-repeat ="inf in widgets">
-	    <td> {{inf.name}}</td>
-	    <td>
-	    <a data-ng-href="#/details/{{inf.id}}">
-		    <button data-ng-click="showDetails(inf)">Details
-		    </button>
-	    </a>
-	    </td>
-	    <td><button data-ng-click="deleteWidgets(inf)">Delete</button></td>
-	  </tr>
-	</table>
-	<div id="btnAdd">
-	<button data-ui-sref="addWidgets"> Add widgets</button>
-	</div>
+		<table>
+			<tr data-ng-repeat="inf in widgets">
+				<td> {{inf.name}}</td>
+				<td>
+					<a data-ng-href="#/details/{{inf.id}}">
+						<button data-ng-click="showDetails(inf)">Details
+						</button>
+					</a>
+				</td>
+				<td><button data-ng-click="deleteWidgets(inf)">Delete</button></td>
+			</tr>
+		</table>
+		<div id="btnAdd">
+			<button data-ui-sref="addWidgets"> Add widgets</button>
+		</div>
 	</div>
 </div>

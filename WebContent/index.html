@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html data-ng-app="routerApp" lang="en-US" data-framework="angularjs">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel='stylesheet' href="./styles/bootstrap.min.css">
-<link rel="stylesheet" href="./styles/style.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel='stylesheet' href="./styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/style.css">
 
 	<!-- library JS File -->
 
-<script type="text/javascript" src="./libraries/angular.js"></script>
-<!-- <script type="text/javascript" src="./libraries/angular-route.js"></script> -->
-<script type="text/javascript" src="./libraries/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="./libraries/angular.js"></script>
+	<!-- <script type="text/javascript" src="./libraries/angular-route.js"></script> -->
+	<script type="text/javascript" src="./libraries/angular-ui-router.min.js"></script>
 
-<!--routing -->
- <script type="text/javascript" src="./routes/app.js"></script>
- 
- <!-- bootstrap -->
- <script type="text/javascript" src="./libraries/ui-bootstrap-tpls.min.js"></script>
- 
- 
- <!-- controllers -->
- <script type="text/javascript" src="./controllers/widgetsController.js"></script>
-  <script type="text/javascript" src="./controllers/addWidgetsController.js"></script>
- <!-- factory -->
- <script type="text/javascript" src="./factory/widgetsFactory.js"></script>
- 
- <!-- filter -->
-<!--  <script type="text/javascript" src="./directive/wordFilter.js"></script> -->
+	<!--routing -->
+	<script type="text/javascript" src="./routes/app.js"></script>
+
+	<!-- bootstrap -->
+	<script type="text/javascript" src="./libraries/ui-bootstrap-tpls.min.js"></script>
+
+
+
+	<!-- factory -->
+	<script type="text/javascript" src="./factory/widgetsFactory.js"></script>
+
+
+	<!-- controllers -->
+	<script type="text/javascript" src="./controllers/widgetsController.js"></script>
+
+
+	<!-- filter -->
+	<script type="text/javascript" src="./filter/wordFilter.js"></script>
 </head>
+
 <body>
-<h3>Widgets App</h3>
-<div class="container-fluid" data-ng-controller="widgetController">
-<div class="col-md-6">
-	<div data-ui-view="home">
+	<h3>Widgets App</h3>
+	<div class="container-fluid" data-ng-controller="widgetController">
+		<div class="col-md-6">
+			<div data-ui-view="home">
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div data-ui-view="content">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div data-ui-view="addedit" class="bodycontent"></div>
+		</div>
 	</div>
-</div>
-<div class="col-md-5">
-		<div data-ui-view="content">
-	</div>
-</div>
-	<div class="col-md-12">
-	<div data-ui-view="addedit" class="bodycontent"></div>
-	</div>
-</div>
 </body>
+
 </html>
